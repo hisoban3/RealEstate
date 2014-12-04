@@ -86,7 +86,7 @@ error_reporting(E_ALL ^ E_DEPRECATED);
                 } else {
 
                     echo "<div id='sidebar-header' class='group' align='right'>
-                            <form action='php/login.php'>
+                            <form action='admin/includes/login.php'>
                                 User name: <input type='text' name='luname' id='luname'><br>
                                 Password: <input type='password' name='lpw' id='lpw'><br>
                                 <input type='submit' name='submit' value='Login' onclick='uspvalidation();'>"; ?>
