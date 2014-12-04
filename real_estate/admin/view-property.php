@@ -55,13 +55,12 @@ require_once 'includes/connection.php';
 						<tbody>
 						
 						<?php
-						$result=mysql_query("SELECT * FROM property ORDER BY propertyid DESC");
-						$counter=$result;
-						$class='';
+						$result  = mysql_query("SELECT * FROM property ORDER BY propertyid DESC");
+						$counter = $result;
+						$class   = '';
 						//if($perm==1)$class='editable';
 						while($row=mysql_fetch_array($result)){
-						echo '<tr class="gradeA" id="'.$row['propertyid'].'" style="cursor:pointer;">
-							
+							echo '<tr class="gradeA" id="'.$row['propertyid'].'" style="cursor:pointer;">
 							<td class="" href="'.$row['propertyid'].'">'.'</td>
 							<td class="" href="'.$row['propertyname'].'">'.$row['propertyid'].'</td>
 							<td class="center portfolio">
@@ -78,10 +77,7 @@ require_once 'includes/connection.php';
 						'</tr>';
 						}
 					?>
-						
-						
-						
-						
+
 						</tbody>
 						<tfoot>
 						<tr>

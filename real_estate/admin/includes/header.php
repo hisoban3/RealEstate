@@ -1,11 +1,11 @@
 <?php
-session_start();
+	session_start();
 
-if($_SESSION['count']==0){
-    header('Location:index.php');
- }
+	if($_SESSION['count']==0){
+	    header('Location:index.php');
+	}
  
- ?>
+?>
 <!DOCTYPE HTML>
 <html>
 <head>

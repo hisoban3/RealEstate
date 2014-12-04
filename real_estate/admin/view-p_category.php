@@ -43,27 +43,23 @@ require_once 'includes/connection.php';
 						<tbody>
 						
 						<?php
-						$result=mysql_query("SELECT * FROM 	property_category");
-						$counter=1;
-						$class='';
-						//if($perm==1)$class='editable';
-						while($row=mysql_fetch_array($result)){
-							echo '<tr class="gradeA" id="'.$row['property_categoryid'].'" style="cursor:pointer;">
-							
-							<td class="" href="'.$row['property_categoryid'].'">'.'</td>
-							<td class="" href="'.$row['propertycategory'].'">'.$row['property_categoryid'].'</td>
-							
-							<td class="'.$class.'" style="cursor:pointer;" field="firstname">'.$row['propertycategory'].'</td>
-							
-							
-							
-							<td class="center"><span><a class="action-icons c-edit" href="?id=' . $row['property_categoryid'] . '" title="Edit">Edit</a></span><span><a class="action-icons c-delete" href="delete-owner.php?id=' . $row['property_categoryid'] . '" title="delete">Delete</a></span><span><a class="action-icons c-approve" href="#" title="Approve">Approve</a></span><span></td>';'</tr>';
+							$result  = mysql_query("SELECT * FROM 	property_category");
+							$counter = 1;
+							$class   = '';
+							//if($perm==1)$class='editable';
+							while($row=mysql_fetch_array($result)){
+								echo '<tr class="gradeA" id="'.$row['property_categoryid'].'" style="cursor:pointer;">
+								
+								<td class="" href="'.$row['property_categoryid'].'">'.'</td>
+								<td class="" href="'.$row['propertycategory'].'">'.$row['property_categoryid'].'</td>
+								<td class="'.$class.'" style="cursor:pointer;" field="firstname">'.$row['propertycategory'].'</td>
+								<td class="center"><span><a class="action-icons c-edit" href="?id=' . $row['property_categoryid'] .
+								'" title="Edit">Edit</a></span><span><a class="action-icons c-delete" href="delete-owner.php?id=' .
+								$row['property_categoryid'] . '" title="delete">Delete</a></span><span>
+								<a class="action-icons c-approve" href="#" title="Approve">Approve</a></span><span></td>';
+								'</tr>';
 						}
 					?>
-						
-						
-						
-						
 						</tbody>
 						<tfoot>
 						<tr>

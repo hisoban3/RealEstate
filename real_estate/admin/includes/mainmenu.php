@@ -10,7 +10,6 @@
 					<?php
                         error_reporting(E_ALL ^ E_DEPRECATED);
                             if ($_SESSION['USR_NAME']){
-
                                 echo "Hi ".$_SESSION['USR_NAME'].",";
                             }
                     ?>
@@ -52,9 +51,5 @@
 			<li><a href=""><span class="stats_icon archives_sl"></span><span class="label">SMS</span></a></li>
 			<li><a href=""><span class="stats_icon bank_sl"></span><span class="label">Payments</span></a></li>
 			<li><a href=""><span class="stats_icon category_sl"></span><span class="label">Reports</span></a></li>
-			
-			
-	
-			
 		</ul>
 	</div>

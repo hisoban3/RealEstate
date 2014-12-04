@@ -51,33 +51,32 @@ require_once 'includes/connection.php';
 						<tbody>
 						
 						<?php
-						$result=mysql_query("SELECT * FROM login");
-						$counter=1;
-						$class='';
-						//if($perm==1)$class='editable';
-						while($row=mysql_fetch_array($result)){
-							echo '<tr class="gradeA" id="'.$row['id'].'" style="cursor:pointer;">
-							
-							<td class="" href="'.$row['id'].'">'.'</td>
-							<td class="" href="'.$row['fname'].'">'.$row['id'].'</td>
-							
-							<td class="'.$class.'" style="cursor:pointer;" field="firstname">'.$row['fname'].'</td>
-							
-							<td class="'.$class.'" style="cursor:pointer;" field="lname">'.$row['lname'].'</td>
-						
-							<td class="'.$class.'" style="cursor:pointer;" field="contact_no">'.$row['email'].'</td>
-							<td class="'.$class.'" style="cursor:pointer;" field="contact_no">'.$row['pno'].'</td>
-						
+							$result  = mysql_query("SELECT * FROM login");
+							$counter = 1;
+							$class   = '';
+							//if($perm==1)$class='editable';
+							while($row=mysql_fetch_array($result)){
+								echo '<tr class="gradeA" id="'.$row['id'].'" style="cursor:pointer;">
 								
-							<td class="'.$class.'" style="cursor:pointer;" field="contact_no">'.$row['login_username'].'</td>
+								<td class="" href="'.$row['id'].'">'.'</td>
+								<td class="" href="'.$row['fname'].'">'.$row['id'].'</td>
+								
+								<td class="'.$class.'" style="cursor:pointer;" field="firstname">'.$row['fname'].'</td>
+								
+								<td class="'.$class.'" style="cursor:pointer;" field="lname">'.$row['lname'].'</td>
 							
-							<td class="center"><span><a class="action-icons c-edit" href="?id=' . $row['id'] . '" title="Edit">Edit</a></span><span><a class="action-icons c-delete" href="delete-owner.php?id=' . $row['id'] . '" title="delete">Delete</a></span><span><a class="action-icons c-approve" href="#" title="Approve">Approve</a></span><span></td>';'</tr>';
-						}
-					    ?>
-						
-						
-						
-						
+								<td class="'.$class.'" style="cursor:pointer;" field="contact_no">'.$row['email'].'</td>
+								<td class="'.$class.'" style="cursor:pointer;" field="contact_no">'.$row['pno'].'</td>
+							
+									
+								<td class="'.$class.'" style="cursor:pointer;" field="contact_no">'.$row['login_username'].'</td>
+								
+								<td class="center"><span><a class="action-icons c-edit" href="?id=' . $row['id'] .
+								'" title="Edit">Edit</a></span><span><a class="action-icons c-delete" href="delete-owner.php?id=' .
+								$row['id'] . '" title="delete">Delete</a></span><span><a class="action-icons c-approve" href="#" title="Approve">Approve</a>
+								</span><span></td>';'</tr>';
+							}
+					    ?>	
 						</tbody>
 						<tfoot>
 						<tr>
