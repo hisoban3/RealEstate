@@ -1,16 +1,16 @@
- <div class="menu classic">
+<div class="menu classic">
                             <ul id="nav" class="menu">
                                 
                                 <li>
-                                    <a href="index.html">HOME</a>
+                                    <a href="index.php">HOME</a>
                                 </li>
                                 
                                 <li>
-                                    <a href="#">RENTALS</a>
+                                    <a href="full-property.php">PROPERTY</a>
                                     <ul class="sub-menu">
-                                        <li><a href="#">Apartments for Rent</a></li>
+                                        <li><a href="full-property.php">PROPERTY </a></li>
                                         <li><a href="#">House for Rent</a></li>
-                                        <li><a href="#">All for Rent</a></li>
+                                        <li><a href="All_for_Rent.php">All for Rent</a></li>
                                     </ul>
                                 </li>
                                 
