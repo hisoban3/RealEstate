@@ -1,27 +1,20 @@
 <?php
-session_start();
-error_reporting(E_ALL ^ E_DEPRECATED);
+	session_start();
+	// error_reporting(E_ALL ^ E_DEPRECATED);
+	require_once('header.php');
 ?>
 
-
-    <!-- END HEAD -->
-<?php
-    require_once('header.php');
-?>
     <!-- Validation -->
 
     <script type="text/javascript" language="javascript">
-        function uspvalidation()
-        {   
+        function uspvalidation() {   
             window.event.returnValue = false;
             if((checkuname()) && (checkpw())) {
                 window.event.returnValue = true;
             }
             
         }
-
-        function checkuname()
-        {
+        function checkuname() {
             var us= document.getElementById("luname").value;
             var us_name = /^[A-Za-z0-9@_ ]{3,20}$/;
             //var len = us.length;
@@ -29,7 +22,6 @@ error_reporting(E_ALL ^ E_DEPRECATED);
                     alert("Username is invalid")
                     return false;
             }
-
             {
                 if(!us_name.test(us)) {
                 alert("Username is invalid")
@@ -37,19 +29,15 @@ error_reporting(E_ALL ^ E_DEPRECATED);
                 }
             }
                 return true;
-                        
         }
-
-        function checkpw()
-        {
+        function checkpw() {
             var pass= document.getElementById("lpw").value;
             
-            if((pass== null)||(pass == ""))
-                {
-                    alert("password is invalid")
-                    return false;
-                }
-                    return true;
+            if((pass== null)||(pass == "")) {
+                alert("password is invalid")
+                return false;
+            }
+                return true;
         }
 
     </script>
@@ -80,7 +68,7 @@ error_reporting(E_ALL ^ E_DEPRECATED);
             <?php
                 if(isset($_SESSION['USR_NAME'])) {
 
-                    echo "<div align='right'><a href='admin.php'>Hi ".$_SESSION['USR_NAME'].",</a><br>";
+                    echo "<div align='right'><a href='admin/dashboard.php'>Hi ".$_SESSION['USR_NAME'].",</a><br>";
                     echo " <a href='php/logout.php'> <input type='submit' name='submit' value='Logout' </a></div>";
 
                 } else {

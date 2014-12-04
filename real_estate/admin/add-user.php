@@ -1,14 +1,13 @@
 <?php 
-require('includes/header.php');
-require('includes/mainmenu.php');
-require('includes/leftmenu.php');
-require_once 'includes/connection.php';
+	require('includes/header.php');
+	require('includes/mainmenu.php');
+	require('includes/leftmenu.php');
+	require_once 'includes/connection.php';
 ?>
 <div id="container">
 	
 	<div id="content">
 		<div class="grid_container">
-			
 			<div class="grid_12">
 				<div class="widget_wrap">
 					<div class="widget_top">
@@ -18,8 +17,6 @@ require_once 'includes/connection.php';
 					<div class="widget_content">
 						<form id="signupform" autocomplete="off" method="post" action="insert-user.php"  class="form_container left_label">
 							<ul>
-							   
-							
 								<li>
 									<div class="form_grid_12">
 										<label class="field_title">Name</label>
@@ -36,9 +33,6 @@ require_once 'includes/connection.php';
 										</div>
 									</div>
 								</li>
-								
-								
-								
 								<li>
 								<div class="form_grid_12">
 									<label class="field_title" id="lusername" for="username">Username<span class="req">*</span></label>

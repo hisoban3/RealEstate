@@ -1,12 +1,10 @@
 <?php
-error_reporting(E_ALL ^ E_DEPRECATED);
-require('includes/header.php');
-require('includes/mainmenu.php');
-require('includes/leftmenu.php');
-?>
-                       
+	error_reporting(E_ALL ^ E_DEPRECATED);
+	require('includes/header.php');
+	require('includes/mainmenu.php');
+	require('includes/leftmenu.php');
+?>                     
 <div id="container">
-	
 	<div id="content">
 		   <br>
 				<div class="activities_s">
@@ -25,7 +23,6 @@ require('includes/leftmenu.php');
 						<span class="activities_chart">500,450,100,500,550, 400,300,550,480,500,320,400,450</span>
 					</div>
 				</div>
-				
 				<div class="views_s">
 					<div class="block_label">
 						Paid Invester<span>150</span>
@@ -39,8 +36,6 @@ require('includes/leftmenu.php');
 					<span class="badge_icon customers_sl"></span>
 				</div>
 			</div>
-			
-			
 		</div>
 		<span class="clear"></span>
 	</div>

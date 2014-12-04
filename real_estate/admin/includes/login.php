@@ -1,11 +1,11 @@
 <?php
-$_SESSION['count']=0;
-session_start();
-$username = "";
-$password = "";
-$error 	  = "";
+	$_SESSION['count']=0;
+	session_start();
+	$username = "";
+	$password = "";
+	$error 	  = "";
 
-require_once 'connection.php';
+	require_once 'connection.php';
 
 	$username	= $_REQUEST['luname'];
 	$password	= $_REQUEST['lpw'];

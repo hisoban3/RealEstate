@@ -1,8 +1,8 @@
 <?php 
-require('includes/header.php');
-require('includes/mainmenu.php');
-require('includes/leftmenu.php');
-require_once 'includes/connection.php';
+	require('includes/header.php');
+	require('includes/mainmenu.php');
+	require('includes/leftmenu.php');
+	require_once 'includes/connection.php';
 ?>
 <div id="container">
 	
@@ -18,8 +18,6 @@ require_once 'includes/connection.php';
 					<div class="widget_content">
 						<form id="signupform" autocomplete="off" method="post" action="insert-property.php" enctype="multipart/form-data" class="form_container left_label">
 							<ul>
-							   
-							
 								<li>
 								<div class="form_grid_12">
 									<label class="field_title" for="name"> Property Name<span class="req">*</span></label>
@@ -36,27 +34,24 @@ require_once 'includes/connection.php';
 											<div class="form_grid_6 alpha">
 										<select data-placeholder="Property Category" style=" width:300px" name="propertycategory" class="chzn-select" tabindex="13">
 						                <?php
-                                             
-                                        $selb=mysql_query("select * from property_category ");
-                                        while($rb=mysql_fetch_array($selb)) {
-                                        ?>
-                                        <option value="<?php echo $rb['propertycategory']; ?>"><?php echo $rb['propertycategory']; ?></option>
-                                        <?php
-                                                                            }
+	                                        $selb = mysql_query("select * from property_category ");
+	                                        while($rb=mysql_fetch_array($selb)) {
+	                                    ?>
+	                                        <option value="<?php echo $rb['propertycategory']; ?>">
+	                                        	<?php
+	                                        		echo $rb['propertycategory'];
+	                                        	?>
+	                                        </option>
+	                                    <?php
+	                                        }
                                         ?>     
 										</select>
 									</div>
-											
 									</div>
-										
-										
 									<span class="clear"></span>
 									</div>
 								</div>
 								</li>
-								
-								
-								
 								<li>
 								<div class="form_grid_12">
 									<label class="field_title">Description<span class="label_intro">Auto Grow Textarea</span></label>
@@ -65,8 +60,6 @@ require_once 'includes/connection.php';
 									</div>
 								</div>
 								</li>
-								
-
 								<li>
 								<div class="form_grid_12">
 									<label class="field_title">Property Image</label>
@@ -75,8 +68,6 @@ require_once 'includes/connection.php';
 									</div>
 								</div>
 								</li>
-								
-								
 								<li>
 								<div class="form_grid_12">
 									<label class="field_title" >property Price<span class="req">*</span></label>
