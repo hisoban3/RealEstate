@@ -10,6 +10,8 @@
 		$login_password = $_POST['login_password'];
 	    $pno			= $_POST['pno'];
 
+	    $login_password = md5($login_password);
+
 		mysql_query("insert into login (fname,lname,email,login_username,login_password,pno)
 					values('$_POST[fname]','$_POST[lname]','$_POST[email]','$_POST[login_username]',
 					'$_POST[login_password]','$_POST[pno]')")or die(mysql_error());

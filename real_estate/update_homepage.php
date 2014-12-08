@@ -78,7 +78,6 @@
         if((checkluname()) && (checklpw())) {
             window.event.returnValue = true;
         }
-            
     }
 
     function checkluname() {
@@ -89,7 +88,6 @@
                 alert("Username is invalid")
                 return false;
         }
-
         {
             if(!us_name.test(us)) {
             alert("Username is invalid")
@@ -97,7 +95,6 @@
             }
         }
             return true;
-                    
     }
 
     function checklpw() {
@@ -149,7 +146,6 @@
                     echo " <a href='php/logout.php'> <input type='submit' name='submit' value='Logout' </a></div>";
 
                 } else {
-
                     echo "<div id='sidebar-header' class='group' align='right'>
                             <form action='php/login.php'>
                                 User name: <input type='text' name='luname' id='luname'><br>

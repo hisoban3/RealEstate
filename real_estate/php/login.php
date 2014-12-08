@@ -15,7 +15,7 @@ require_once('config.php');
 		$result1 = mysql_query($qry1);
 		$count1	 = mysql_num_rows($result1);
 
-		$qry2 	 = "SELECT * FROM employee WHERE uname = '$username' AND password = '$password'";
+		$qry2 	 = "SELECT * FROM customers WHERE uname = '$username' AND password = '$password'";
 		$result2 = mysql_query($qry2);
 		$count2	 = mysql_num_rows($result2);
 

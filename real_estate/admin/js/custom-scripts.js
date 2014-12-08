@@ -1383,7 +1383,7 @@ $("#adv2").idTabs(function(id,list,set){
 });
 	
   
-  $("#form103").validate();
+$("#form103").validate();
 
   
 $(".elem_extend").EnableMultiField({
@@ -1422,8 +1422,7 @@ $('.item .delete').click(function(){
 
 $('.confirm_dialog').click(function(){
 		
-		
-		
+
 		$.confirm({
 			'title'		: 'Delete Confirmation',
 			'message'	: 'You are about to delete this item. <br />It cannot be restored at a later time! Continue?',
@@ -1579,11 +1578,11 @@ $(function() {
 			},
 			password: {
 				required: true,
-				minlength: 5
+				minlength: 6
 			},
 			password_confirm: {
 				required: true,
-				minlength: 5,
+				minlength: 6,
 				equalTo: "#password"
 			},
 			email: {
@@ -1613,7 +1612,7 @@ $(function() {
 			},
 			email: {
 				required: "Please enter a valid email address",
-				minlength: "Please enter a valid email address",
+				// minlength: "Please enter a valid email address",
 				remote: jQuery.format("{0} is already in use")
 			}
 		},

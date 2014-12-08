@@ -14,15 +14,17 @@
             $uname       = $_POST["uname"];
             $password    = $_POST["pw"];
 
-            mysql_query("INSERT INTO `oneasia`.`employee` ( `id` , `fname` , `lname` , `email` , `pno` , `uname` , `password`)
+            $password    = md5($password);
+
+            mysql_query("INSERT INTO `oneasia`.`customers` ( `id` , `fname` , `lname` , `email` , `pno` , `uname` , `password`)
                         VALUES ( NULL , '".$fname."', '".$lname."', '".$email."', '".$pno."', '".$uname."', '".$password."'
                         );"
             );
 
             echo "<font color=#00FF00><h3>New Record Successfully Created !</h3></font>
-                  Redirecting  to create user page now ....";
+                  Redirecting  to create Home page now ....";
 
-            print "<META http-equiv='refresh' content='3;URL=../add_user.php'>";
+            print "<META http-equiv='refresh' content='3;URL=../index.php'>";
 
             mysql_close($con);
             

@@ -378,7 +378,7 @@
 				        <div class="sidebar group">
 				            
 				            <div class="widget-first widget text-image">
-				                <h3>Create new user</h3>
+				                <h3>Create new Account</h3>
 				                <!-- <div class="text-image" style="text-align:left">
                                     <img src="images/admin/admin.png" alt="Responsive and strong layout" />
                                 </div> -->

@@ -2,8 +2,7 @@
     session_start();
 ?>
 
-<html>
-    
+<html>   
     <!-- START HEAD -->
     <head>
         

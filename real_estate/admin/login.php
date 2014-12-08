@@ -1,3 +1,11 @@
+<?php
+	// No direct access to this file 
+	// define('IS_AJAX', isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest'); 
+	// if(!IS_AJAX) {
+	// 	die('Restricted access');
+	// }
+
+?>
 <body id="theme-default" class="full_block">
 
 <div id="login_page">
@@ -6,9 +14,9 @@
 			<ul class="login_branding">
 				<li>
 				<div class="logo_small">
-					<img src="../images/logo.png" width="99" height="35" alt="bingo">
+					<a href="../index.php"><img src="../images/logo.png" width="86" height="52" alt="bingo"></a>
 				</div>
-				<span><strong>Real EstateReservation System</strong></span>
+				<span><strong>Real Estate Business</strong></span>
 				</li>
 				<li class="right go_to"><a href="../index.php" title="Go to Main Site" class="home">Go To Main Site</a></li>
 			</ul>
