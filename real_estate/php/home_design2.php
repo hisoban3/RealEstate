@@ -21,7 +21,7 @@
                         VALUES ( NULL , '".$paragraph."' );"
             );
 
-            header("location: ../update_homepage.php"); // Redirecting To add_user Page
+            header("location: ../admin/updateHomePageContents.php"); // Redirecting To add_user Page
             echo "New Record Successfully Created.";
 
             mysql_close($con);

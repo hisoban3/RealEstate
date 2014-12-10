@@ -71,13 +71,11 @@
 							   <div class="form_grid_12">
 									<label class="field_title">Contact Number</label>
 									<div class="form_input">
-										
-									<div class="form_grid_4">
-											<input name="pno" type="text" tabindex="1" maxlength="11"   class=""/>
-											<span class=" label_intro">Contact Number</span>
-										</div>
-									
-								<span class="clear"></span>
+										<!-- <div class="form_grid_4"> -->
+												<input name="pno" type="text" tabindex="1" maxlength="11" class="large"/>
+												<!-- <span class=" label_intro">Contact Number</span> -->
+										<!-- </div> -->
+										<!-- <span class="clear"></span> -->
 									</div>
 								</div>
 						        </li>

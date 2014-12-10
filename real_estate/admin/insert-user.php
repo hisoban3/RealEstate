@@ -5,16 +5,16 @@
 	if (isset($_POST['submit'])){
 	    $firstname		= $_POST['firstname'];
 	    $lastname       = $_POST['lastname'];
+	    $username       = $_POST['username'];
 	    $email			= $_POST['email'];
-		$login_username = $_POST['login_username'];
-		$login_password = $_POST['login_password'];
+		$password 		= $_POST['password'];
 	    $pno			= $_POST['pno'];
 
-	    $login_password = md5($login_password);
+	    $password = md5($login_password);
 
 		mysql_query("insert into login (fname,lname,email,login_username,login_password,pno)
-					values('$_POST[fname]','$_POST[lname]','$_POST[email]','$_POST[login_username]',
-					'$_POST[login_password]','$_POST[pno]')")or die(mysql_error());
+					values('$firstname','$lastname','$email','$username','$password','$pno')"
+					)or die(mysql_error());
 
 		include 'index.php';
 	}

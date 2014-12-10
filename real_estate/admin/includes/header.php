@@ -11,7 +11,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width"/>
-<title>Real Estate System</title>
+<title>One Asia Asset Management</title>
 <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico" />
         <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
 <link href="css/reset.css" rel="stylesheet" type="text/css">

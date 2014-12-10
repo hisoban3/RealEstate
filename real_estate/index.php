@@ -90,7 +90,6 @@
                         
                         <!-- START MAIN NAVIGATION -->
                         <?php
-                         
                          include("mainmenu.php");
                         ?>
                         <!-- END MAIN NAVIGATION -->
@@ -223,27 +222,74 @@
 				                    
 				                    <div class="post hentry">
 				                        <div class="meta group">
-				                            <h4><a href="#" title="Nice &amp; Clean. The best for your blog!">Homes for sale?</a></h4>
-				                            <p class="date">July 24, 2014</p>
-				                            <p class="comments"><span><a href="#" title="Comment on Nice &amp; Clean. The best for your blog!">No comments</a></span></p>
+				                            <h4>
+                                                <a href="#" title="Nice &amp; Clean. The best for your blog!">
+                                                    <?php
+                                                        require_once('php/config.php'); 
+                                                        $result = mysql_query("SELECT paragraph FROM home_design3_1 ORDER BY id DESC LIMIT 1 ");
+
+                                                        if (!$result) {
+                                                            echo 'Could not run query: ' . mysql_error();
+                                                            exit;
+                                                        }
+                                                        $row = mysql_fetch_row($result);
+
+                                                        echo $row[0];
+                                                    ?>
+                                                </a>
+                                            </h4>
+				                            <!-- <p class="date">July 24, 2014</p>
+				                            <p class="comments"><span><a href="#" title="Comment on Nice &amp; Clean. The best for your blog!">No comments</a></span></p> -->
+				                        </div>
+				                    </div>
+
+				                    <div class="post hentry">
+				                        <div class="meta group">
+				                            <h4>
+                                                <a href="#" title="Another theme by YIThemes!">
+                                                    <?php
+                                                        require_once('php/config.php'); 
+                                                        $result = mysql_query("SELECT paragraph FROM home_design3_2 ORDER BY id DESC LIMIT 1 ");
+
+                                                        if (!$result) {
+                                                            echo 'Could not run query: ' . mysql_error();
+                                                            exit;
+                                                        }
+                                                        $row = mysql_fetch_row($result);
+
+                                                        echo $row[0];
+                                                    ?>
+                                                </a>
+                                            </h4>
+				                           	<!--  <p class="date">July 24, 2014</p>
+				                            <p class="comments"><span><a href="#" title="Comment on Another theme by YIThemes!">No comments</a></span></p> -->
 				                        </div>
 				                    </div>
 				                    
 				                    <div class="post hentry">
 				                        <div class="meta group">
-				                            <h4><a href="#" title="Another theme by YIThemes!">Fast & Easy!</a></h4>
-				                            <p class="date">July 24, 2014</p>
-				                            <p class="comments"><span><a href="#" title="Comment on Another theme by YIThemes!">No comments</a></span></p>
+				                            <h4>
+                                                <a href="#" title="This is the title of the first article. Enjoy it.">
+                                                <?php
+                                                    require_once('php/config.php'); 
+                                                    $result = mysql_query("SELECT paragraph FROM home_design3_3 ORDER BY id DESC LIMIT 1 ");
+
+                                                    if (!$result) {
+                                                        echo 'Could not run query: ' . mysql_error();
+                                                        exit;
+                                                    }
+                                                    $row = mysql_fetch_row($result);
+
+                                                    echo $row[0];
+                                                ?>
+                                                </a>
+                                            </h4>
+				                            <!-- <p class="date">July 24, 2014</p>
+				                            <p class="comments"><span><a href="#" title="Comment on This is the title of the first article. Enjoy it.">2 comments</a></span></p> -->
 				                        </div>
 				                    </div>
 				                    
-				                    <div class="post hentry">
-				                        <div class="meta group">
-				                            <h4><a href="#" title="This is the title of the first article. Enjoy it.">Safe & Secure.</a></h4>
-				                            <p class="date">July 24, 2014</p>
-				                            <p class="comments"><span><a href="#" title="Comment on This is the title of the first article. Enjoy it.">2 comments</a></span></p>
-				                        </div>
-				                    </div>
+				                    
 				                    
 				                    <div class="clear"></div>
 				                    

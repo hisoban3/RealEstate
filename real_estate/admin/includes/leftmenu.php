@@ -23,8 +23,8 @@
 				
 				<li><a href="#"><span class="nav_icon bulls_eye"></span>Home page<span class="up_down_arrow">&nbsp;</span></a>
 				<ul class="acitem">
-					<li><a href="" target="_blank"><span class="list-icon">&nbsp;</span>ADD</a></li>
-					<li><a href="" target="_blank"><span class="list-icon">&nbsp;</span>View</a></li>
+					<li><a href="../admin/updateHomePageSliding.php" target="_blank"><span class="list-icon">&nbsp;</span>Update Sliding</a></li>
+					<li><a href="../admin/updateHomePageContents.php" target="_blank"><span class="list-icon">&nbsp;</span>Update Contents</a></li>
 					<li><a href="" target="_blank"><span class="list-icon">&nbsp;</span>Manage</a></li>
 					
 				</ul>

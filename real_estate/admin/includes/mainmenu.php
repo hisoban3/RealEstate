@@ -21,8 +21,8 @@
 	</div>
 	
 	<div class="page_title gray_sai">
-		<span class="title_icon"><span class="computer_imac"></span></span>
-		<h3>Real Estate System</h3>
+		<a href="dashboard.php"><span class="title_icon"><span class="computer_imac"></span></span></a>
+		<h3>One Asia Asset Management</h3>
 		<div class="top_search">
 			<form action="#" method="post">
 				<ul id="search_box">
@@ -47,7 +47,6 @@
 			<li><a href="view-property.php"><span class="stats_icon administrative_docs_sl"></span><span class="label">Property</span></a></li>
 			<li><a href=""><span class="stats_icon calendar_sl"></span><span class="label">Events</span></a></li>
 			<li><a href=""><span class="stats_icon finished_work_sl"></span><span class="label">Mail</span></a></li>
-			
 			<li><a href=""><span class="stats_icon archives_sl"></span><span class="label">SMS</span></a></li>
 			<li><a href=""><span class="stats_icon bank_sl"></span><span class="label">Payments</span></a></li>
 			<li><a href=""><span class="stats_icon category_sl"></span><span class="label">Reports</span></a></li>
