@@ -14,10 +14,10 @@
             $uname       = $_POST["uname"];
             $password    = $_POST["pw"];
 
-            $password    = md5($password);
+            $encrypted_password    = md5($password);
 
             mysql_query("INSERT INTO `oneasia`.`customers` ( `id` , `fname` , `lname` , `email` , `pno` , `uname` , `password`)
-                        VALUES ( NULL , '".$fname."', '".$lname."', '".$email."', '".$pno."', '".$uname."', '".$password."'
+                        VALUES ( NULL , '".$fname."', '".$lname."', '".$email."', '".$pno."', '".$uname."', '".$encrypted_password."'
                         );"
             );
 

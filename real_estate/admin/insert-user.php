@@ -10,10 +10,10 @@
 		$password 		= $_POST['password'];
 	    $pno			= $_POST['pno'];
 
-	    $password = md5($login_password);
+	    $encrypted_password = md5($password);
 
 		mysql_query("insert into login (fname,lname,email,login_username,login_password,pno)
-					values('$firstname','$lastname','$email','$username','$password','$pno')"
+					values('$firstname','$lastname','$email','$username','$encrypted_password','$pno')"
 					)or die(mysql_error());
 
 		include 'index.php';
